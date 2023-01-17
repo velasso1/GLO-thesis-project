@@ -1,9 +1,9 @@
 'use strict';
 
-// import validator from './modules/validator';
 import modal from './modules/modal';
 import sendForm from './modules/sendForm';
+import validation from './modules/validation';
 
-// validator();
 modal();
 sendForm();
+validation();

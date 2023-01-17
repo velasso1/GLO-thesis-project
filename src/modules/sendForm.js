@@ -5,12 +5,10 @@ import validator from './validator';
 const sendForm = () => {
     const form = document.querySelector('.rf > form');
     const inputsList = form.querySelectorAll('input');
-    const phoneInput = form.querySelector('.tel');
     const status = document.createElement('div');
     const load = 'Отправка данных..';
     const errorText = 'Произошла ошибка';
     const complete = 'Данные отправлены!';
-    // const button = document.querySelector('.feedback');
 
     const validate = () => {
         let flag = true;

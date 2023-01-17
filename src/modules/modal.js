@@ -47,6 +47,8 @@ const modal = () => {
 
     buttonServices.addEventListener('click', changeDisplay);
 
+    overlay.addEventListener('click', changeDisplay);
+
     closeBtn.addEventListener('click', changeDisplay);
 };
 
