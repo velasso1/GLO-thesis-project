@@ -1,6 +1,8 @@
 'use strict';
 
-import one from './modules/one';
+// import validator from './modules/validator';
+import modal from './modules/modal';
 
 
-one();
+// validator();
+modal();
