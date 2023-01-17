@@ -9,9 +9,13 @@ const modal = () => {
     const callbackBtn = document.querySelectorAll('.callback-btn');
     const closeBtn = document.querySelector('img[alt="modal-close"]');
     const buttonServices = document.querySelector('.button-services');
+    const btnUp = document.querySelector('.up');
+
+    btnUp.addEventListener('click', () => console.log('нажато'));
 
     const changeDisplay = () => {
         if (overlay.style.display === 'none') {
+            btnUp.style.zIndex = '20';
             animate({
                 duration: 800,
                 timing(timeFraction) {
@@ -29,6 +33,7 @@ const modal = () => {
         } else {
             overlay.style.display = 'none';
             modalCallback.style.display = 'none';
+            btnUp.style.zIndex = '';
         }
     };
 
