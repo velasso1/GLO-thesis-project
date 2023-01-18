@@ -11,8 +11,6 @@ const modal = () => {
     const buttonServices = document.querySelector('.button-services');
     const btnUp = document.querySelector('.up');
 
-    btnUp.addEventListener('click', () => console.log('нажато'));
-
     const changeDisplay = () => {
         if (overlay.style.display === 'none') {
             btnUp.style.zIndex = '20';
