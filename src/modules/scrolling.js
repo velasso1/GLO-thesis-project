@@ -18,6 +18,8 @@ const scrolling = () => {
         });
     };
 
+    btnUp.style.opacity = '0';
+
     scrollBtns.addEventListener('click', (e) => {
         e.preventDefault();
 
